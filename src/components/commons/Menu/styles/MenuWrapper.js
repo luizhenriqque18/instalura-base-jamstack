@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 export const MenuWrapper = styled.nav`
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,7 +20,7 @@ export const MenuWrapper = styled.nav`
       max-width: 768px;
     `,
     lg: css`
-      max-width: 1160px; 
+      max-width: 1160px;
     `,
     xl: css`
       max-width: 1222px;
@@ -34,9 +34,9 @@ MenuWrapper.LeftSide = styled.div`
   order: 1;
   /* ${breakpointsMedia({
     md: css`
-        width: 131px;
-        height: 32px;
-      `,
+      width: 131px;
+      height: 32px;
+    `,
   })}
   ${breakpointsMedia({
     md: css`
@@ -56,10 +56,10 @@ MenuWrapper.CentralSide = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: 17px;
-  border-top: 1px solid #88989E;
-  border-bottom: 1px solid #88989E;
+  border-top: 1px solid #88989e;
+  border-bottom: 1px solid #88989e;
   padding: 12px;
-  
+
   /* ${breakpointsMedia({
     md: css`
       max-width: 332px;
@@ -76,21 +76,20 @@ MenuWrapper.CentralSide = styled.div`
     text-align: center;
     display: block;
     text-decoration: none;
-    color: #88989E;
+    color: #88989e;
     transition: 200ms ease-in-out;
     /* ${breakpointsMedia({
-    xs: css`
+      xs: css`
         ${TextStyleVariants.smallestException}
-    `,
-    md: css`
-      ${TextStyleVariants.paragraph1}
-    `,
-  })} */
+      `,
+      md: css`
+        ${TextStyleVariants.paragraph1}
+      `,
+    })} */
     &:hover,
     &:focus {
       font-weight: 500;
-      color: #070C0E;
-      
+      color: #070c0e;
     }
   }
 `;
