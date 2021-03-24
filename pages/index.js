@@ -1,18 +1,20 @@
 import Footer from "../src/components/commons/Footer";
 import Menu from "../src/components/commons/Menu";
 import { Text } from "../src/components/foundation/Text";
+import { Box } from "../src/components/foundation/Layout/Box";
 import { Button } from "../src/components/commons/Button";
 
 export default function Home() {
   return (
-    <div
-      style={{
-        flex: "1",
-        display: "flex",
-        flexWrap: "wrap",
-        flexDirection: "column",
-        justifyContent: "space-between",
-      }}
+    <Box
+      flex="1"
+      display="flex"
+      flexWrap="wrap"
+      flexDirection="column"
+      justifyContent="space-between"
+      backgroundImage="url(/images/bubbles.svg)"
+      backgroundRepeat="no-repeat"
+      backgroundPosition="bottom right"
     >
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
@@ -58,6 +60,6 @@ export default function Home() {
         </Button>
       </div>
       <Footer />
-    </div>
+    </Box>
   );
 }
