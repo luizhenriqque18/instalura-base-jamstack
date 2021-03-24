@@ -1,7 +1,8 @@
 import React from "react";
-import { Logo } from "../../../theme/Logo";
-import { Button } from "../Button";
 import { MenuWrapper } from "./styles/MenuWrapper";
+import { Button } from "../Button";
+import { Text } from "../../foundation/Text";
+import { Logo } from "../../../theme/Logo";
 
 export default function Menu() {
   return (
@@ -20,7 +21,9 @@ export default function Menu() {
           { url: "/sobre", name: "Sobre" },
         ].map((link) => (
           <li key={link.url}>
-            <a href={link.url}>{link.name}</a>
+            <Text variant="smallestException" tag="a" href={link.url}>
+              {link.name}
+            </Text>
           </li>
         ))}
       </MenuWrapper.CentralSide>
