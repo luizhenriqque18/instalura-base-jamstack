@@ -44,8 +44,14 @@ export const TextStyleVariants = {
 
 const TextBase = styled.span`
   ${({ variant }) => TextStyleVariants[variant]}
-  color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
+
   ${propToStyle("textAlign")}
+  ${propToStyle("marginBottom")}
+  ${propToStyle("margin")} {
+    /*
+    color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
+  */
+  }
 `;
 
 export function Text({ variant, children, tag, ...props }) {
