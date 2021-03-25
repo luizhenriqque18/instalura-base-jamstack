@@ -8,7 +8,7 @@ import { Grid } from "../src/components/foundation/Layout/Grid";
 import Model from "../src/components/commons/Model";
 
 export default function Home() {
-  const [isModalOpen, setModalState] = React.useState(true);
+  const [isModalOpen, setModalState] = React.useState(false);
 
   return (
     <Box
