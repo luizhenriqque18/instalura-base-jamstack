@@ -1,11 +1,12 @@
 import React from "react";
 import Footer from "../src/components/commons/Footer";
 import Menu from "../src/components/commons/Menu";
-import { Text } from "../src/components/foundation/Text";
+import Text from "../src/components/foundation/Text";
 import { Box } from "../src/components/foundation/Layout/Box";
 import { Button } from "../src/components/commons/Button";
 import { Grid } from "../src/components/foundation/Layout/Grid";
 import Model from "../src/components/commons/Model";
+import FormCadastro from "../src/components/patterns/FormCadastro";
 
 export default function Home() {
   const [isModalOpen, setModalState] = React.useState(false);
@@ -27,15 +28,7 @@ export default function Home() {
           setModalState(false);
         }}
       >
-        {(propsDoModal) => (
-          <Box
-            backgroundColor="white"
-            // eslint-disable-next-line react/jsx-props-no-spreading
-            {...propsDoModal}
-          >
-            <div>Nosso conteúdo pro modal</div>
-          </Box>
-        )}
+        {(propsDoModal) => <FormCadastro propsDoModal={propsDoModal} />}
       </Model>
       <Menu />
       <Grid.Container
